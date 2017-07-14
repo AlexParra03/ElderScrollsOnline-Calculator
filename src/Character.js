@@ -11,7 +11,7 @@ export class Character extends React.Component {
                     <div className="equip-shoulders" onclick={this.props.selectMenu("shoulders")}> <p> Shoulders </p> </div>
                     <div className="equip-chest" onclick={this.props.selectMenu("chest")}> <p> Chest </p> </div>
                     <div className="equip-gloves" onclick={this.props.selectMenu("gloves")}> <p> Gloves </p> </div>
-                    <div className="equip-belt" onclick={this.props.selectMenu("belt")}> </p> Belt </p> </div>
+                    <div className="equip-belt" onclick={this.props.selectMenu("belt")}> <p> Belt </p> </div>
                     <div className="equip-pants" onclick={this.props.selectMenu("pants")}> <p> Pants </p> </div>
                     <div className="equip-boots" onclick={this.props.selectMenu("boots")}> <p> Boots </p> </div>
                 </div>
