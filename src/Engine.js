@@ -27,7 +27,7 @@ export class Engine extends React.Component {
     selectMenu(menuType){
         this.setState({
             activeMenu: menuType
-        })
+        });
     }
 
 

@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.character-sheet div {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    background-color: red;
+    float: left;
+}
+
+.character-sheet{
+    width: 1000px;
+}
