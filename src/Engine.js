@@ -19,12 +19,26 @@ export class Engine extends React.Component {
 
     render(){
         let menu;
+        switch (this.state.activeMenu) {
+            case 'armor':
+                menu = <Menu className="menu" type="armor" content={armorInventory} pickItem={this.pickItem} />
+                break;
+            case 'weapon':
+                menu = <Menu className="menu" type="weapon" content={weaponInventory} pickItem={this.pickItem} />
+                break;
+            case 'jewlery':
+                menu = <Menu className="menu" type="jewlery" content={jewleryInventory} pickItem={this.pickItem} />
+                break;
+            default:
+                menu = <div></div>
+                break;
+        }
 
         return (
             <div>
                 <Character me={this.state.characters[0]} selectMenu={this.selectMenu} id={0} />
                 <Character me={this.state.characters[1]} selectMenu={this.selectMenu} id={1} />
-                <Menu className="menu" type="armor" content={armorInventory} pickItem={this.pickItem} />
+                {menu}
             </div>
 
         );
