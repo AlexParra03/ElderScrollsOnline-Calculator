@@ -4,13 +4,19 @@ body{
 }
 
 .character-sheet div {
-    width: 100px;
+    width: 10%;
     height: 100px;
-    margin-left: 10px;
+    margin-left: 1%;
+    margin-top: 10px;
     background-color: red;
     float: left;
 }
 
 .character-sheet{
-    width: 1000px;
+}
+
+
+.menu-item{
+    margin-top: 10px;
+    background-color: lightblue;
 }

@@ -4,9 +4,7 @@ export class ItemFactory{
     static createCharacter(characterClass, level){
         return {
             class: typeof characterClass === 'string' ? characterClass : "",
-            weapon: {},
-            armor: new Array(7),
-            jewlery: new Array(3),
+            items: new Array(9),
             attributes: {}
         }
     }

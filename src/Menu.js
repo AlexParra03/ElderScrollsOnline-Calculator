@@ -6,13 +6,13 @@ import {Item} from './Item';
 export class Menu extends React.Component {
     render(){
         const items = this.props.content.map((item, index) => {
-            return (<Item data={item} key={index} />);
+            return (<Item type={this.props.type} data={item} index={index} pickItem={this.props.pickItem} />);
         });
 
         return (
             <div>
-                <h3 className="menuTitle"> {this.props.type} </h3>
-                <div className="menuList"> {items} </div>
+                <h3 className="menu-title"> {this.props.type} </h3>
+                <div className="menu-list"> {items} </div>
             </div>
         );
     }
@@ -20,5 +20,6 @@ export class Menu extends React.Component {
 
 Menu.propTypes = {
     type: PropTypes.string,
-    content: PropTypes.array
+    content: PropTypes.array,
+    pickItem: PropTypes.function
 }
